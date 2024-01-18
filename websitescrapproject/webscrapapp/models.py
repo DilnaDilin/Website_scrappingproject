@@ -5,4 +5,4 @@ class Link(models.Model):
     name=models.CharField(max_length=500,null=True,blank=True)
     address=models.CharField(max_length=500,null=True,blank=True)
     def __str__(self):
-        return self.name
+        return self.name or 'No title available'
